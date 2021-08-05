@@ -24,7 +24,7 @@ var lyr__CLS_FSH_AREA_SMR_1 = new ol.layer.Vector({
                 source:jsonSource__CLS_FSH_AREA_SMR_1, 
                 style: style__CLS_FSH_AREA_SMR_1,
                 interactive: true,
-                title: '<img src="styles/legend/_CLS_FSH_AREA_SMR_1.png" /> 조업밀집구역_여름 CLS_FSH_AREA_SMR'
+                title: '<img src="./styles/legend/_CLS_FSH_AREA_SMR_1.png" /> 조업밀집구역_여름 CLS_FSH_AREA_SMR'
             });
 
 lyr_GoogleSatellite_0.setVisible(true);lyr__CLS_FSH_AREA_SMR_1.setVisible(true);
