@@ -173,7 +173,7 @@ var onPointerMove = function(evt) {
                             if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                 popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(clusterFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                             } else {
-                                popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
+                                popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="./images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
                             }
                             popupText += '<tr>' + popupField + '</tr>';
                         }
@@ -199,7 +199,7 @@ var onPointerMove = function(evt) {
                         if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                             popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(currentFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                         } else {
-                            popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
+                            popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="./images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
                         }
                         popupText += '<tr>' + popupField + '</tr>';
                     }
@@ -316,7 +316,7 @@ var onSingleClick = function(evt) {
                                 if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                     popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(clusterFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                                 } else {
-                                    popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
+                                    popupField += (clusterFeature.get(currentFeatureKeys[i]) != null ? '<img src="./images/' + clusterFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
                                 }
                                 popupText += '<tr>' + popupField + '</tr>';
                             }
@@ -342,7 +342,7 @@ var onSingleClick = function(evt) {
                             if (layer.get('fieldImages')[currentFeatureKeys[i]] != "ExternalResource") {
                                 popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? autolinker.link(currentFeature.get(currentFeatureKeys[i]).toLocaleString()) + '</td>' : '');
                             } else {
-                                popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
+                                popupField += (currentFeature.get(currentFeatureKeys[i]) != null ? '<img src="./images/' + currentFeature.get(currentFeatureKeys[i]).replace(/[\\\/:]/g, '_').trim()  + '" /></td>' : '');
                             }
                             popupText += '<tr>' + popupField + '</tr>';
                         }
